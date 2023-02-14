@@ -1,0 +1,211 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.background-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://images.unsplash.com/photo-1515847049296-a281d6401047?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) top center /cover no-repeat;
+}
+.background-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+  url(https://images.unsplash.com/photo-1522199670076-2852f80289c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80) top right /cover no-repeat;
+}
+.background-3{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://images.unsplash.com/photo-1665808282962-9bd99d7fe3f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) top center /cover no-repeat;
+}
+.background-4{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://images.unsplash.com/photo-1569161031678-f49b4b9ca1c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) top center /cover no-repeat;
+}
+.user-button {
+  color: grey;
+}
+.user-name{
+  font-weight: bold;
+  font-size: large;
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+#hero{
+  height: 100vh;
+}
+#hero .hero-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+
+.logo-text {
+  font-family: "Montserrat", cursive;
+}
+
+.btn.btn-primary {
+  background-color: rgb(64, 135, 228);
+  border: none;
+}
+
+.btn.btn-danger {
+  background-color: rgb(230, 102, 88);
+  border: none;
+}
+
+.btn.btn-success {
+  background-color: rgb(60, 179, 113);
+  border: none;
+}
+
+.form-outline {
+  position: relative
+}
+
+.form-outline .form-control {
+  min-height: 40px;
+  padding: .33em .75em;
+  border: 1px solid lightgrey;
+  background: transparent;
+  transition: all .2s linear
+}
+
+.form-outline .form-control~.form-label {
+  position: absolute;
+  top: 0;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  left: .75rem;
+  padding-top: .37rem;
+  pointer-events: none;
+  transform-origin: 0 0;
+  transition: all .2s ease-out;
+  color: rgba(0, 0, 0, .4);
+  margin-bottom: 0
+}
+
+.form-outline .form-control:not(.placeholder-active)::-moz-placeholder {
+  opacity: 0
+}
+
+.form-outline .form-control:not(.placeholder-active)::placeholder {
+  opacity: 0
+}
+
+.form-outline .form-control.active::-moz-placeholder,
+.form-outline .form-control:focus::-moz-placeholder {
+  opacity: 1
+}
+
+.form-outline .form-control.active::placeholder,
+.form-outline .form-control:focus::placeholder {
+  opacity: 1
+}
+
+.form-outline .form-control:focus {
+  box-shadow: none !important;
+}
+
+.form-outline .form-control.active~.form-label,
+.form-outline .form-control:focus~.form-label,
+.form-outline .form-control:valid~.form-label {
+  transform: translateY(-1rem) translateY(.1rem) scale(.8);
+  top: 2px
+}
+
+.form-outline .form-control:focus~.form-label,
+.form-outline .form-control:valid~.form-label {
+  padding: 0 2px;
+  background-color: white;
+  color: #757575
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-tabs .nav-link {
+  border: solid transparent;
+  border-width: 0 0 2px;
+  border-radius: 0;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(0, 0, 0, .5);
+  padding: 12px 20px 12px
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #f5f5f5;
+  border-color: transparent
+}
+
+.nav-tabs .nav-link:focus {
+  border-color: transparent
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: black;
+  border-color: black
+}
